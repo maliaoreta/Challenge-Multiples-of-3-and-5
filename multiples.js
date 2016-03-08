@@ -9,11 +9,8 @@ exports.sumOfAMultiple = function( n ) {
   var fives = 0;
   
   for(i=1; i<n; i++){
-    if(i%3===0){
+    if(i%3===0 || i%5===0){
       threes += i;
-    }
-    else if(i%5===0){
-      fives += i;    
     }
    
     sum = threes+fives;
